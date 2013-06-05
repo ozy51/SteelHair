@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace SteelHair.Model
     {
 
         List<Cliente> listaClientes = new List<Cliente>();
+        public ObservableCollection<Cliente> Clientes { get; set; }
 
 
         public void adicionarCliente(Cliente c)

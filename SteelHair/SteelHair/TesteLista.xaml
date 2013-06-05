@@ -16,6 +16,6 @@
 	<Grid x:Name="LayoutRoot">
 		<ListBox Name="list1" HorizontalAlignment="Left" Height="327" Margin="28,21,0,0" VerticalAlignment="Top" Width="259"/>
 		<Button Name="butao1" Content="Testar Adicionar" Margin="321,21,36,299" Click="Button_Click"/>
-		<Button Content="Remover Cliente" Margin="321,80,36,240"/>
+        <Button Content="Remover Cliente" Margin="321,80,36,240" Click="Button_Click_1"/>
 	</Grid>
 </Window>
