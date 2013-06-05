@@ -56,3 +56,21 @@ C:\Users\Tiago Modesto\Documents\Visual Studio 2012\Projects\SteelHair\SteelHair
 E:\Work\SteelHair\SteelHair\bin\Debug\SteelHair.exe.config
 E:\Work\SteelHair\SteelHair\obj\Debug\SteelHair.exe
 C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\bin\Debug\SteelHair.exe.config
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\bin\Debug\SteelHair.exe
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\bin\Debug\SteelHair.pdb
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.csprojResolveAssemblyReference.cache
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\adicionarcliente.baml
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\Cliente1.baml
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\MainWindow.baml
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\Simple Styles.baml
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\App.baml
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\adicionarcliente.g.cs
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\Cliente1.g.cs
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\MainWindow.g.cs
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\App.g.cs
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair_MarkupCompile.cache
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.g.resources
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.Properties.Resources.resources
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.csproj.GenerateResource.Cache
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.exe
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.pdb

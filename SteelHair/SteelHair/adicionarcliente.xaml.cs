@@ -39,10 +39,9 @@ namespace SteelHair
             if (masculino.IsChecked == true)
                 sexo = true;
             lol=int.Parse(telefone1.Text);
-            
 
-            Cliente novo = new Cliente(nome.Text,morada.Text,lol,sexo,cabelonormal.Text);
-            merda
+            //Cliente novo = new Cliente(nome.Text,morada.Text,lol,sexo,cabelonormal,cabeloseco,cabeloporosidade,cabelofino,cabelomedio,cabelogrosso,couroseco,courogordo,couromuitogordo,courocaspa,couroqueda,couroseco,cabelobrancas.Text);
+            
 
         }
 
