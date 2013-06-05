@@ -25,9 +25,7 @@ namespace SteelHair.Model
         Boolean couroMuitoGordo;
         Boolean couroQueda;
         Boolean couroCaspa;
-        private System.Windows.Controls.TextBox nome;
-        private System.Windows.Controls.TextBox morada1;
-        private System.Windows.Controls.TextBox telefone1;
+        string brancas;
         
         //metodos cliente
 
@@ -60,6 +58,7 @@ namespace SteelHair.Model
             this.couroMuitoGordo = true;
             this.couroQueda = true;
             this.couroCaspa = true;
+            this.brancas = "";
         }
 
         public Cliente(string n,long tel)
@@ -68,12 +67,25 @@ namespace SteelHair.Model
             this.telefone = tel;
         }
 
-        Cliente(string n, string m, int tel, bool sexo, bool cabeloNormal, bool cabeloSeco, bool cabeloPorosidade, bool cabeloFino, bool cabeloMedio, bool cabeloGrosso, bool couroNormal, bool couroGordo, bool couroMuitoGordo, bool couroQueda, bool couroCaspa)
+        Cliente(string n, string m, int tel, bool sexo, bool cabn, bool cabs, bool cabp, bool cabf, bool cabm, bool cabg, bool cn, bool cg, bool cmg, bool cq, bool cc, string brancas)
         {
             this.nomecompleto = n;
             this.morada = m;
             this.telefone = tel;
-            this.cabeloNormal = cabeloNormal;
+            this.sexo = sexo;
+            this.cabeloNormal = cabn;
+            this.cabeloPorosidade = cabp;
+            this.cabeloFino = cabf;
+            this.cabeloMedio = cabm;
+            this.cabeloGrosso = cabg;
+            this.couroNormal = cn;
+            this.couroGordo  = cg;
+            this.couroMuitoGordo = cmg;
+            this.couroQueda =cq;
+            this.couroCaspa = cc;
+            this.brancas = brancas;
+
+
 
         }
 

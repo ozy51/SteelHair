@@ -35,17 +35,16 @@ namespace SteelHair
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Boolean sexo=false;
+
             int lol;
             if (masculino.IsChecked == true)
                 sexo = true;
             lol=int.Parse(telefone1.Text);
 
-<<<<<<< HEAD
 
-=======
-            //Cliente novo = new Cliente(nome.Text,morada.Text,lol,sexo,cabelonormal,cabeloseco,cabeloporosidade,cabelofino,cabelomedio,cabelogrosso,couroseco,courogordo,couromuitogordo,courocaspa,couroqueda,couroseco,cabelobrancas.Text);
+            Cliente novo = new Cliente(nome.Text, morada.Text, lol, sexo, cabelonormal.Checked, cabeloseco.Checked, cabeloporosidade.Checked, cabelofino.Checked, cabelomedio.Checked, cabelogrosso.Checked, courogordo.Checked, couromuitogordo.Checked, courocaspa.Checked, couroqueda.Checked, couroseco.Checked, cabelobrancas.Text);
             
->>>>>>> 6e350fd4722b1fbceb17ea80630d7b1991882b65
+
 
         }
 
