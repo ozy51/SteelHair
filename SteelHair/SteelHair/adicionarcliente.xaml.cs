@@ -42,7 +42,7 @@ namespace SteelHair
             
 
             Cliente novo = new Cliente(nome.Text,morada.Text,lol,sexo,cabelonormal.Text);
-            
+            merda
 
         }
 

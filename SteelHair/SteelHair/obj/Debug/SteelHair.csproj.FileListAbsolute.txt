@@ -55,3 +55,4 @@ C:\Users\Tiago Modesto\Documents\Visual Studio 2012\Projects\SteelHair\SteelHair
 C:\Users\Tiago Modesto\Documents\Visual Studio 2012\Projects\SteelHair\SteelHair\bin\Debug\SteelHair.pdb
 E:\Work\SteelHair\SteelHair\bin\Debug\SteelHair.exe.config
 E:\Work\SteelHair\SteelHair\obj\Debug\SteelHair.exe
+C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\bin\Debug\SteelHair.exe.config
