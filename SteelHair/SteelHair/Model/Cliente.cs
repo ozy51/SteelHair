@@ -68,13 +68,13 @@ namespace SteelHair.Model
             this.telefone = tel;
         }
 
-        public Cliente(string n, string m, int tel, bool sexo, bool cabelon)
+        Cliente(string n, string m, int tel, bool sexo, bool cabeloNormal, bool cabeloSeco, bool cabeloPorosidade, bool cabeloFino, bool cabeloMedio, bool cabeloGrosso, bool couroNormal, bool couroGordo, bool couroMuitoGordo, bool couroQueda, bool couroCaspa)
         {
             this.nomecompleto = n;
-            this.morada= m;
+            this.morada = m;
             this.telefone = tel;
-            this.sexo = sexo;
-            this.cabeloNormal = cabelon;
+            this.cabeloNormal = cabeloNormal;
+
         }
 
 

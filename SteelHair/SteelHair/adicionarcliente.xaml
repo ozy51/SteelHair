@@ -39,9 +39,9 @@
 					<CheckBox Name="cabeloseco" Content="Seco" HorizontalAlignment="Left" Height="17" Margin="189,10,0,0" VerticalAlignment="Top" Width="113"/>
                     <CheckBox Name="cabelomedio" Content="Médio" HorizontalAlignment="Left" Height="17" Margin="189,32,0,0" VerticalAlignment="Top" Width="113"/>
                     <CheckBox Name="cabelogrosso" Content="Grosso" HorizontalAlignment="Left" Height="17" Margin="383,32,0,0" VerticalAlignment="Top" Width="113"/>
-					<TextBox HorizontalAlignment="Left" Height="21.96" Margin="66.58,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" TextAlignment="Right"/>
+                    <TextBox Name="cabelobrancas" HorizontalAlignment="Left" Height="21.96" Margin="66.58,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" TextAlignment="Right"/>
 					<Label Content="Brancas :" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
-                    <Label Name="cabelobrancas" Content="%" HorizontalAlignment="Left" Margin="114.58,54,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+                    <Label Content="%" HorizontalAlignment="Left" Margin="114.58,54,0,0" VerticalAlignment="Top" FontSize="14.667"/>
 				</Grid>
 			</TabItem>
 			<TabItem Header="Couro Cab.">
