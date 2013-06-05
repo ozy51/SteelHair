@@ -15,7 +15,7 @@
 	</Window.Background>
     <Grid>
     	<Button Content="Aniversários" HorizontalAlignment="Left" Height="77" Margin="59,119,0,0" VerticalAlignment="Top" Width="122"/>
-    	<Button Content="Registos" HorizontalAlignment="Left" Height="77" Margin="195,28,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button Content="Registos" HorizontalAlignment="Left" Height="77" Margin="195,28,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click2"/>
     	<Button Content="Descontos" HorizontalAlignment="Left" Height="77" Margin="195,119,0,0" VerticalAlignment="Top" Width="122"/>
     	<Button Content="Stock" HorizontalAlignment="Left" Height="77" Margin="331,28,0,0" VerticalAlignment="Top" Width="122"/>
     	<Button Content="Sobre" HorizontalAlignment="Left" Height="77" Margin="331,119,0,0" VerticalAlignment="Top" Width="122" RenderTransformOrigin="0.992,1.091"/>

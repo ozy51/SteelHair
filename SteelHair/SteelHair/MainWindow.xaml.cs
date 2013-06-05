@@ -32,5 +32,11 @@ namespace SteelHair
 			newW.ShowDialog(); // works
         	// TODO: Add event handler implementation here.
         }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            var newlol = new TesteLista();
+            newlol.ShowDialog();
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using SteelHair.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -10,41 +9,30 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SteelHair.Model;
 
 namespace SteelHair
 {
-	/// <summary>
-	/// Interaction logic for adicionarcliente.xaml
-	/// </summary>
-	public partial class adicionarcliente : Window
+	public partial class TesteLista
 	{
-		public adicionarcliente()
+		public TesteLista()
 		{
 			this.InitializeComponent();
-			
+            Cliente teste1 = new Cliente("joao", 9111111);
+            Cliente teste2 = new Cliente("Lolada", 9111222);
+            Cliente teste3 = new Cliente("Carlos", 933311);
+			Bdados dados = new Bdados();
+            dados.adicionarCliente(teste1);
+            dados.adicionarCliente(teste2);
+            dados.adicionarCliente(teste3);
+            list1.ItemsSource = dados.getLista();
 			// Insert code required on object creation below this point.
 		}
 
 		private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
 		{
-            
-			this.Close();
+		
 			// TODO: Add event handler implementation here.
 		}
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Boolean sexo=false;
-            int lol;
-            if (masculino.IsChecked == true)
-                sexo = true;
-            lol=int.Parse(telefone1.Text);
-            
-
-
-
-        }
-
-
 	}
 }

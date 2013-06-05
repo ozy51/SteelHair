@@ -9,8 +9,34 @@ namespace SteelHair.Model
     class Bdados
     {
 
-            System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\Bdados");
-        
+        List<Cliente> listaClientes = new List<Cliente>();
+
+
+        public void adicionarCliente(Cliente c)
+        {
+            listaClientes.Add(c);
+
+        }
+
+        public void mostrarCliente()
+        {
+            for (int i = 0; i < listaClientes.Count; i++)
+            {
+                Console.WriteLine("Nome: ");
+                Console.WriteLine(listaClientes.ElementAt(i).getNome());
+                Console.WriteLine("Telefone:");
+                Console.WriteLine(listaClientes.ElementAt(i).getTel());
+            }
+        }
+        //System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\Bdados");
+
+
+        //file.Close();
+
+        public List<Cliente> getLista()
+        {
+            return this.listaClientes;
+        }
 
 	
 	}

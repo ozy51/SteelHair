@@ -11,7 +11,7 @@ namespace SteelHair.Model
         //atributos cliente
         string nomecompleto;
         string morada;
-        int telefone;
+        long telefone;
         Boolean sexo;
         Boolean cabeloNormal;
         Boolean cabeloSeco;
@@ -62,7 +62,11 @@ namespace SteelHair.Model
             this.couroCaspa = true;
         }
 
-
+        public Cliente(string n,long tel)
+        {
+            this.nomecompleto = n;
+            this.telefone = tel;
+        }
 
         public Cliente(string n, string m, int tel, bool sexo, bool cabelon)
         {
@@ -73,7 +77,26 @@ namespace SteelHair.Model
             this.cabeloNormal = cabelon;
         }
 
-     
+
+
+        //Gets e Sets
+        public string getNome()
+        {
+            return this.nomecompleto;
+        }
+
+        public long getTel()
+        {
+            return this.telefone;
+        }
+
+        //Metodo toString
+
+        public override string ToString()
+        {
+            return getNome();
+        }
+
 
       
 
