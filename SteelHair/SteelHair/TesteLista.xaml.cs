@@ -22,9 +22,6 @@ namespace SteelHair
             Cliente teste2 = new Cliente("Lolada", 9111222);
             Cliente teste3 = new Cliente("Carlos", 933311);
             Bdados dados = new Bdados();
-            dados.adicionarCliente(teste1);
-            dados.adicionarCliente(teste2);
-            dados.adicionarCliente(teste3);
             list1.ItemsSource = dados.Clientes;
             list1.Items.Add(teste1);
             list1.Items.Add(teste2);
