@@ -36,18 +36,34 @@ namespace SteelHair
         {
             Boolean sexo=false;
 
-            int lol;
+            int lol,numdig=0,x=0,error=0;
             if (masculino.IsChecked == true)
                 sexo = true;
             lol=int.Parse(telefone1.Text);
+
+            x=lol;
+            do
+            {
+                x = x / 10;
+                numdig++;
+            } while (x > 0);
+
+            if(x!=9)
+               MessageBox.Show("Numero de telefone inválido", "Confirmation");
+                error++;
+
+            if (nome.MaxLength > 41)
+
+                error++;
+
+
 
 
 
             Cliente novo = new Cliente(nome.Text, morada.Text, lol, sexo, cabelonormal.IsChecked, cabeloseco.IsChecked, cabeloporosidade.IsChecked, cabelofino.IsChecked, cabelomedio.IsChecked, cabelogrosso.IsChecked, courogordo.IsChecked, couromuitogordo.IsChecked, courocaspa.IsChecked, couroqueda.IsChecked, couroseco.IsChecked, cabelobrancas.Text);
             
 
-            //Cliente novo = new Cliente(nome.Text,morada.Text,lol,sexo,cabelonormal,cabeloseco,cabeloporosidade,cabelofino,cabelomedio,cabelogrosso,couroseco,courogordo,couromuitogordo,courocaspa,couroqueda,couroseco,cabelobrancas.Text);
-            
+                       
 
         }
 

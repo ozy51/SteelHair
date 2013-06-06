@@ -110,7 +110,23 @@ namespace SteelHair.Model
         }
 
 
-      
+        public bool validar_telefone()
+        {
+            long x = 0;
+            int numdig=0;
+            long tel = this.telefone;
+            x = tel;
+            do
+            {
+                x = x / 10;
+                numdig++;
+            } while (x > 0);
+
+            
+            if(numdig!=9)
+            return false;
+            return true;
+        }
 
     }
 
