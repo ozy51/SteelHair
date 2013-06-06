@@ -1,6 +1,7 @@
 ﻿using SteelHair.Model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,15 +23,22 @@ namespace SteelHair
 	///
     public partial class MainWindow : Window
     {
+        public ObservableCollection<Cliente> listaclientes;
         public MainWindow()
         {
             InitializeComponent();
+            Bdados dados = new Bdados();
+            dados.lerClientesFile();
+            listaclientes = dados.Clientes;
+
+            this.Closing += new System.ComponentModel.CancelEventHandler(Window_Closing);
+
 
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-			var newW  = new Cliente1();
+            var newW = new Cliente1(listaclientes);
 			newW.ShowDialog(); // works
         	// TODO: Add event handler implementation here.
         }
@@ -39,6 +47,11 @@ namespace SteelHair
         {
             var newlol = new TesteLista();
             newlol.ShowDialog();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBox.Show("Exit The Project");
         }
     }
 }

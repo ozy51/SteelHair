@@ -41,7 +41,7 @@ namespace SteelHair.Model
 
 
         // estrutura da bdados
-        Cliente(){
+        public Cliente(){
             this.nomecompleto = "";
             this.morada = "";
             this.telefone = 0;

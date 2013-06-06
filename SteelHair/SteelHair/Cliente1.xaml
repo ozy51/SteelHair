@@ -3,7 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	x:Class="SteelHair.Cliente1"
 	x:Name="Window"
-	Title="Cliente1"
+	Title="Gestão de Clientes"
 	Width="488" Height="405"
 	ResizeMode="NoResize">
 	<Window.Background>
@@ -14,8 +14,9 @@
 	</Window.Background>
 
 	<Grid x:Name="LayoutRoot">
-		<ListBox HorizontalAlignment="Left" Height="327" Margin="28,21,0,0" VerticalAlignment="Top" Width="259"/>
+		<ListBox Name="list1" HorizontalAlignment="Left" Height="327" Margin="28,21,0,0" VerticalAlignment="Top" Width="259"/>
 		<Button Content="Adicionar Cliente" Margin="321,21,36,299" Click="Button_Click"/>
 		<Button Content="Remover Cliente" Margin="321,80,36,240" Click="Button_Click_1"/>
-	</Grid>
+        <Button Content="Ver Cliente" Margin="321,141,36,179" Click="Button_Click_2"/>
+    </Grid>
 </Window>

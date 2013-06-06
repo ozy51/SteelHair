@@ -56,6 +56,9 @@
     <Compile Include="TesteLista.xaml.cs">
       <DependentUpon>TesteLista.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VerCliente.xaml.cs">
+      <DependentUpon>VerCliente.xaml</DependentUpon>
+    </Compile>
     <Page Include="adicionarcliente.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,6 +90,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TesteLista.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VerCliente.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

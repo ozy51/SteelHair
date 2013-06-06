@@ -100,3 +100,5 @@ C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\SteelHair.pdb
 >>>>>>> 6e350fd4722b1fbceb17ea80630d7b1991882b65
 C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\TesteLista.baml
 C:\Users\Tiago Modesto\Documents\OZY\SteelHair\SteelHair\obj\Debug\TesteLista.g.cs
+E:\Work\SH\SteelHair\SteelHair\obj\Debug\VerCliente.baml
+E:\Work\SH\SteelHair\SteelHair\obj\Debug\VerCliente.g.cs

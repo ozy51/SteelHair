@@ -1,7 +1,7 @@
 ﻿<Window x:Class="SteelHair.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525"
+        Title="SteelHair - Menu Principal" Height="350" Width="525"
 		ResizeMode="NoResize">
 	<Window.Resources>
 		<Color x:Key="fundocliente">#FF194889</Color>

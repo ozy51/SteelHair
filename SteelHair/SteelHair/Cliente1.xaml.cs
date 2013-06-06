@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SteelHair.Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,12 +19,20 @@ namespace SteelHair
 	/// </summary>
 	public partial class Cliente1 : Window
 	{
-		public Cliente1()
+		public Cliente1(ObservableCollection<Cliente> listaclientes)
 		{
 			this.InitializeComponent();
+            Cliente teste1 = new Cliente("João Miguel Ferreira Martins", 9111111);
+            Cliente teste2 = new Cliente("Ana Sofia Nunes Carvalho", 9111222);
+            Cliente teste3 = new Cliente("Maria Rosa dos Santos", 933311);
+            list1.ItemsSource = listaclientes;
+            list1.Items.Add(teste1);
+            list1.Items.Add(teste2);
+            list1.Items.Add(teste3);
 			
 			// Insert code required on object creation below this point.
 		}
+
 
 		private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
 		{
@@ -38,8 +48,18 @@ namespace SteelHair
 			string caption = "Remover Utilizador";
 			MessageBoxButton button = MessageBoxButton.YesNo;
 			MessageBoxImage icon = MessageBoxImage.Warning;
-			MessageBox.Show(messageBoxText, caption, button, icon);
-			// TODO: Add event handler implementation here.
+            if (MessageBox.Show(messageBoxText, caption, button, icon) == MessageBoxResult.Yes)
+            {
+                list1.Items.RemoveAt(list1.Items.IndexOf(list1.SelectedItem));
+            }
 		}
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Cliente novo = new Cliente();
+            novo = (Cliente)list1.SelectedItem;
+            var verCliente = new VerCliente(novo);
+            verCliente.ShowDialog();
+        }
 	}
 }
