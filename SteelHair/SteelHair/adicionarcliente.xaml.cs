@@ -42,9 +42,12 @@ namespace SteelHair
             lol=int.Parse(telefone1.Text);
 
 
-            Cliente novo = new Cliente(nome.Text, morada.Text, lol, sexo, cabelonormal.Checked, cabeloseco.Checked, cabeloporosidade.Checked, cabelofino.Checked, cabelomedio.Checked, cabelogrosso.Checked, courogordo.Checked, couromuitogordo.Checked, courocaspa.Checked, couroqueda.Checked, couroseco.Checked, cabelobrancas.Text);
+
+            Cliente novo = new Cliente(nome.Text, morada.Text, lol, sexo, cabelonormal.IsChecked, cabeloseco.IsChecked, cabeloporosidade.IsChecked, cabelofino.IsChecked, cabelomedio.IsChecked, cabelogrosso.IsChecked, courogordo.IsChecked, couromuitogordo.IsChecked, courocaspa.IsChecked, couroqueda.IsChecked, couroseco.IsChecked, cabelobrancas.Text);
             
 
+            //Cliente novo = new Cliente(nome.Text,morada.Text,lol,sexo,cabelonormal,cabeloseco,cabeloporosidade,cabelofino,cabelomedio,cabelogrosso,couroseco,courogordo,couromuitogordo,courocaspa,couroqueda,couroseco,cabelobrancas.Text);
+            
 
         }
 

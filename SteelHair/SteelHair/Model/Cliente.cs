@@ -13,18 +13,18 @@ namespace SteelHair.Model
         string morada;
         long telefone;
         Boolean sexo;
-        Boolean cabeloNormal;
-        Boolean cabeloSeco;
-        Boolean cabeloPorosidade;
-        Boolean cabeloFino;
-        Boolean cabeloMedio;
-        Boolean cabeloGrosso;
-        Boolean couroNormal;
-        Boolean couroSeco;
-        Boolean couroGordo;
-        Boolean couroMuitoGordo;
-        Boolean couroQueda;
-        Boolean couroCaspa;
+        Boolean? cabeloNormal;
+        Boolean? cabeloSeco;
+        Boolean? cabeloPorosidade;
+        Boolean? cabeloFino;
+        Boolean? cabeloMedio;
+        Boolean? cabeloGrosso;
+        Boolean? couroNormal;
+        Boolean? couroSeco;
+        Boolean? couroGordo;
+        Boolean? couroMuitoGordo;
+        Boolean? couroQueda;
+        Boolean? couroCaspa;
         string brancas;
         
         //metodos cliente
@@ -67,7 +67,7 @@ namespace SteelHair.Model
             this.telefone = tel;
         }
 
-        Cliente(string n, string m, int tel, bool sexo, bool cabn, bool cabs, bool cabp, bool cabf, bool cabm, bool cabg, bool cn, bool cg, bool cmg, bool cq, bool cc, string brancas)
+       public Cliente(string n, string m, int tel, bool sexo, bool? cabn, bool? cabs, bool? cabp, bool? cabf, bool? cabm, bool? cabg, bool? cn, bool? cg, bool? cmg, bool? cq, bool? cc, string brancas)
         {
             this.nomecompleto = n;
             this.morada = m;

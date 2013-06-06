@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,33 +12,43 @@ namespace SteelHair.Model
     class Bdados
     {
 
-        List<Cliente> listaClientes = new List<Cliente>();
+        public ObservableCollection<Cliente> Clientes { get; set; }
 
-
-        public void adicionarCliente(Cliente c)
-        {
-            listaClientes.Add(c);
-
-        }
-
-        public void mostrarCliente()
-        {
-            for (int i = 0; i < listaClientes.Count; i++)
-            {
-                Console.WriteLine("Nome: ");
-                Console.WriteLine(listaClientes.ElementAt(i).getNome());
-                Console.WriteLine("Telefone:");
-                Console.WriteLine(listaClientes.ElementAt(i).getTel());
-            }
-        }
-        //System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\Bdados");
 
 
         //file.Close();
 
-        public List<Cliente> getLista()
+
+        public void escreverClientesFile()
         {
-            return this.listaClientes;
+            FileStream outFile;
+            BinaryFormatter bFormatter = new BinaryFormatter();
+
+            // Ppen file for output
+            outFile = new FileStream("clientes.dat", FileMode.Create, FileAccess.Write);
+
+            // Output object to file via serialization
+            bFormatter.Serialize(outFile, Clientes);
+
+            // Close file
+            outFile.Close();
+        }
+
+        public void lerClientesFile()
+        {
+            FileStream outFile;
+            BinaryFormatter bFormatter = new BinaryFormatter();
+
+            // Ppen file for output
+            outFile = new FileStream("clientes.dat", FileMode.Open);
+            ObservableCollection<Cliente> clientesin = new ObservableCollection<Cliente>();
+            // Output object to file via serialization
+            clientesin = (ObservableCollection<Cliente>)bFormatter.Deserialize(outFile);
+
+            // Close file
+            outFile.Close();
+
+            this.Clientes = clientesin;
         }
 
 	
