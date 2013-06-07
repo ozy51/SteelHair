@@ -34,34 +34,46 @@ namespace SteelHair
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Cliente teste = new Cliente();
             Boolean sexo=false;
-
-            int lol,numdig=0,x=0,error=0;
+            int contador=0;
+            int lol,bs;
             if (masculino.IsChecked == true)
                 sexo = true;
             lol=int.Parse(telefone1.Text);
+            bs = int.Parse(cabelobrancas1.Text);
 
-            x=lol;
-            do
+            if (teste.validar_telefone(lol) == true)
             {
-                x = x / 10;
-                numdig++;
-            } while (x > 0);
+                MessageBox.Show("Numero de telefone inválido", "Confirmation");
+                contador++;
+            }
 
-            if(x!=9)
-               MessageBox.Show("Numero de telefone inválido", "Confirmation");
-                error++;
+            if (teste.validar_nome(nome.Text) == false)
+            {
+                MessageBox.Show("Numero de caracteres para o Nome excede o limite máximo de 45 Caracteres", "Confirmation");
+                contador++;
 
-            if (nome.MaxLength > 41)
+            }
 
-                error++;
+            if (teste.validar_morada(morada.Text) == false)
+            {
+                MessageBox.Show("Numero de caracteres para a Morada excede o limite máximo de 100 caracteres", "Confirmation");
+                contador++;
+            }
 
+            if (teste.validar_brancas(bs) == false)
+            {
+                MessageBox.Show("Numero de caracteres para o número de brancas excede o limite máximo de 3 caracteres", "Confirmation");
+                contador++;
+            }
 
-
-
-
-            Cliente novo = new Cliente(nome.Text, morada.Text, lol, sexo, cabelonormal.IsChecked, cabeloseco.IsChecked, cabeloporosidade.IsChecked, cabelofino.IsChecked, cabelomedio.IsChecked, cabelogrosso.IsChecked, courogordo.IsChecked, couromuitogordo.IsChecked, courocaspa.IsChecked, couroqueda.IsChecked, couroseco.IsChecked, cabelobrancas.Text);
-            
+            if (contador == 0)
+            {
+                Cliente novo = new Cliente(nome.Text, morada.Text, lol, sexo, cabelonormal.IsChecked, cabeloseco.IsChecked, cabeloporosidade.IsChecked, cabelofino.IsChecked, cabelomedio.IsChecked, cabelogrosso.IsChecked, courogordo.IsChecked, couromuitogordo.IsChecked, courocaspa.IsChecked, couroqueda.IsChecked, couroseco.IsChecked, bs);
+            }
+            else
+                contador = 0;
 
                        
 

@@ -122,7 +122,7 @@ namespace SteelHair {
         
         #line 42 "..\..\adicionarcliente.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox cabelobrancas;
+        internal System.Windows.Controls.TextBox cabelobrancas1;
         
         #line default
         #line hidden
@@ -260,7 +260,7 @@ namespace SteelHair {
             this.cabelogrosso = ((System.Windows.Controls.CheckBox)(target));
             return;
             case 11:
-            this.cabelobrancas = ((System.Windows.Controls.TextBox)(target));
+            this.cabelobrancas1 = ((System.Windows.Controls.TextBox)(target));
             return;
             case 12:
             this.couronormal = ((System.Windows.Controls.CheckBox)(target));

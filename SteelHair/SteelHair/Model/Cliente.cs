@@ -25,7 +25,7 @@ namespace SteelHair.Model
         Boolean? couroMuitoGordo;
         Boolean? couroQueda;
         Boolean? couroCaspa;
-        string brancas;
+        int brancas;
         
         //metodos cliente
 
@@ -58,7 +58,7 @@ namespace SteelHair.Model
             this.couroMuitoGordo = true;
             this.couroQueda = true;
             this.couroCaspa = true;
-            this.brancas = "";
+            this.brancas = 0;
         }
 
         public Cliente(string n,long tel)
@@ -67,7 +67,7 @@ namespace SteelHair.Model
             this.telefone = tel;
         }
 
-       public Cliente(string n, string m, int tel, bool sexo, bool? cabn, bool? cabs, bool? cabp, bool? cabf, bool? cabm, bool? cabg, bool? cn, bool? cg, bool? cmg, bool? cq, bool? cc, string brancas)
+       public Cliente(string n, string m, int tel, bool sexo, bool? cabn, bool? cabs, bool? cabp, bool? cabf, bool? cabm, bool? cabg, bool? cn, bool? cg, bool? cmg, bool? cq, bool? cc, int brancas)
         {
             this.nomecompleto = n;
             this.morada = m;
@@ -110,11 +110,11 @@ namespace SteelHair.Model
         }
 
 
-        public bool validar_telefone()
+        public bool validar_telefone(long t)
         {
             long x = 0;
             int numdig=0;
-            long tel = this.telefone;
+            long tel = t;
             x = tel;
             do
             {
@@ -125,8 +125,50 @@ namespace SteelHair.Model
             
             if(numdig!=9)
             return false;
+            else
             return true;
         }
+
+        public bool validar_nome(string n)
+        {
+            string nome = n;
+            if (nome.Length > 45)
+                return false;
+            else
+                return true;
+        }
+
+        public bool validar_morada(string m)
+        {
+            string morada = m;
+
+
+            if (morada.Length > 100)
+                return false;
+            else
+                return true;
+
+        }
+
+        public bool validar_brancas(int b)
+        {
+            int brancas = b;
+            int numdig = 0;
+            int x = 0;
+            x = b;
+            do
+            {
+                x = x / 10;
+                numdig++;
+            } while (x > 0);
+
+            if (numdig != 3)
+                return false;
+            else
+                return true;
+           
+        }
+
 
     }
 
